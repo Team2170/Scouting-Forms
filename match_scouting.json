@@ -1,0 +1,352 @@
+[
+  {
+    "type": "header",
+    "label": "Pre-Match Info"
+  },
+  {
+    "type": "multiselect",
+    "id": "preMatchStart",
+    "label": "Starting Position",
+    "options": [
+      "Not There",
+      "Blue Barge",
+      "Center",
+      "Red Barge"
+    ]
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Autonomous"
+  },
+  {
+    "type": "checkbox",
+    "id": "didStartingZone",
+    "label": "Did they leave starting zone?"
+  },
+  {
+    "type": "subheader",
+    "label": "Auto Coral"
+  },
+  {
+    "type": "counter",
+    "id": "autoL4",
+    "label": "Level 4",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "autoL3",
+    "label": "Level 3",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "autoL2",
+    "label": "Level 2",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "autoL1",
+    "label": "Level 1",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "subheader",
+    "label": "Auto Algae"
+  },
+  {
+    "type": "counter",
+    "id": "autoAlgaeRemoved",
+    "label": "Algae Removed",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "autoProcessor",
+    "label": "Processor",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "autoNet",
+    "label": "Net",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "checkbox",
+    "id": "didFeedStation",
+    "label": "Did they collect coral from Feed Station?"
+  },
+  {
+    "type": "checkbox",
+    "id": "AutoAlgaeReef",
+    "label": "Did they pick up Algae from the Reef?"
+  },
+  {
+    "type": "checkbox",
+    "id": "AutoAlgaeFloor",
+    "label": "Did they pick up Algae from the Floor?"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Teleop"
+  },
+  {
+    "type": "subheader",
+    "label": "Teleop Coral"
+  },
+  {
+    "type": "counter",
+    "id": "attempts",
+    "label": "Attempts",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopL4",
+    "label": "Level 4",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopL3",
+    "label": "Level 3",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopL2",
+    "label": "Level 2",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopL1",
+    "label": "Level 1",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "checkbox",
+    "id": "teleopSource",
+    "label": "Did they pick up Coral from the Feed Station?"
+  },
+  {
+    "type": "checkbox",
+    "id": "teleopFloor",
+    "label": "Did they pick up Coral from the Floor?"
+  },
+  {
+    "type": "subheader",
+    "label": "Teleop Algae"
+  },
+  {
+    "type": "counter",
+    "id": "teleopAlgaeRemoved",
+    "label": "Algae Removed",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopProcessor",
+    "label": "Robot Scored in Processor",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopNet",
+    "label": "Robot Scored in Net",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "counter",
+    "id": "teleopHumanNet",
+    "label": "Human Player Scored in Net",
+    "variant": "standard",
+    "allow_negative": false
+  },
+  {
+    "type": "checkbox",
+    "id": "teleopAlgaeReef",
+    "label": "Did they pick up Algae from the Reef?"
+  },
+  {
+    "type": "checkbox",
+    "id": "teleopAlgaeFloor",
+    "label": "Did they pick up Algae from the Floor?"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Endgame"
+  },
+  {
+    "type": "slider",
+    "label": "How much time was on the clock when they started climbing?",
+    "options": {
+      "min": 0,
+      "max": 60,
+      "step": 3
+    },
+    "variant": "standard",
+    "id": "climbingStartTime"
+  },
+  {
+    "type": "multiselect",
+    "id": "endgameBarge",
+    "label": "Stage Status of robot at end of match:",
+    "options": [
+      "Not Parked",
+      "Parked",
+      "Shallow Cage",
+      "Deep Cage"
+    ]
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "General"
+  },
+  {
+    "type": "checkbox",
+    "id": "diedDuringMatch",
+    "label": "Powered off during the match (or never started)?"
+  },
+  {
+    "type": "checkbox",
+    "id": "recoveredFromDeath",
+    "label": "Recovered from being powered off?"
+  },
+  {
+    "type": "checkbox",
+    "id": "TippedOver",
+    "label": "Tipped over during the match?"
+  },
+  {
+    "type": "checkbox",
+    "id": "Stuck",
+    "label": "Stuck during the match?"
+  },
+  {
+    "type": "checkbox",
+    "id": "stoppedScoring",
+    "label": "Did they ever stop scoring (can be accidental or intentional)?"
+  },
+  {
+    "type": "slider",
+    "id": "qDefenseQuality",
+    "label": "Played Defense from 0-Not Played to 5-Very Effective?",
+    "options": {
+      "min": 0,
+      "max": 5,
+      "step": 1
+    },
+    "variant": "standard"
+  },
+  {
+    "type": "slider",
+    "id": "qDriverSkill",
+    "label": "Driver Skill from 1-Limited to 5-Very Effective?",
+    "options": {
+      "min": 1,
+      "max": 5,
+      "step": 1
+    },
+    "variant": "standard"
+  },
+  {
+    "type": "checkbox",
+    "id": "YellowCard",
+    "label": "Yellow Card?"
+  },
+  {
+    "type": "checkbox",
+    "id": "RedCard",
+    "label": "Red Card?"
+  },
+  {
+    "type": "textblock",
+    "id": "otherNotes",
+    "label": "Other comments and notes:"
+  },
+  {
+    "type": "derived",
+    "formula": "3*didStartingZone + 3*autoL1 + 4*autoL2 + 6*autoL3 + 7*autoL4 + 6*autoProcessor + 4*autoNet",
+    "id": "AutoPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "2*teleopL1 + 3*teleopL2 + 4*teleopL3 + 5*teleopL4 + 6*teleopProcessor + 4*(teleopNet + teleopHumanNet)",
+    "id": "TeleopPoints"
+  },
+  {
+    "type": "derived",
+    "formula": " multiselect(endgameBarge, 'Not Parked', 0, 'Parked', 2, 'Shallow Cage', 6, 'Deep Cage',12)",
+    "id": "EndgamePoints"
+  },
+  {
+    "type": "derived",
+    "formula": "AutoPoints + TeleopPoints + EndgamePoints",
+    "id": "contributedPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "3*autoL1 + 4*autoL2 + 6*autoL3 + 7*autoL4 + 2*teleopL1 + 3*teleopL2 + 4*teleopL3 + 5*teleopL4",
+    "id": "CoralPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "6*(autoProcessor + teleopProcessor) + 4*(autoNet + teleopNet + teleopHumanNet)",
+    "id": "AlgaePoints"
+  },
+  {
+    "type": "derived",
+    "formula": "4*teleopHumanNet",
+    "id": "HumanPoints"
+  },
+  {
+    "type": "derived",
+    "formula": "teleopL1 + teleopL2 + teleopL3 + teleopL4",
+    "id": "teleopPieces"
+  },
+  {
+    "type": "derived",
+    "formula": "((135 - climbingStartTime) / teleopPieces) || 160",
+    "id": "cycleTime"
+  },
+  {
+    "type": "derived",
+    "formula": "14.646447 - log(cycleTime, 1.4142135624)",
+    "id": "cycleSpeedFactor"
+  },
+  {
+    "type": "derived",
+    "formula": "10 - 8*diedDuringMatch + 3*recoveredFromDeath - (6 - 4*diedDuringMatch)*stoppedScoring",
+    "id": "reliabilityScore"
+  }
+]
