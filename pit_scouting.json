@@ -1,0 +1,167 @@
+[
+  {
+    "type": "header",
+    "label": "Drive Base"
+  },
+  {
+    "type": "multiselect",
+    "label": "Drive base type",
+    "id": "driveBaseType",
+    "options": [
+      "Swerve",
+      "Tank",
+      "Mecanum",
+      "Other"
+    ]
+  },
+  {
+    "type": "multiselect",
+    "label": "Motor type",
+    "id": "motorType",
+    "options": [
+      "Falcons",
+      "Krakens",
+      "Neos"
+    ]
+  },
+  {
+    "type": "slider",
+    "variant": "standard",
+    "label": "Robot Weight with Bumpers & Battery (lbs)",
+    "id": "robotWeight",
+    "options": {
+      "min": 60,
+      "max": 150,
+      "step": 1
+    }
+  },
+  {
+    "type": "checkbox",
+    "label": "Are they easy to tip?",
+    "id": "tippability"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Teleop"
+  },
+  {
+    "type": "multiselect",
+    "label": "Coral pickup area?",
+    "options": [
+      "Floor",
+      "Human Player Station",
+      "Both"
+    ],
+    "id": "coralPickup"
+  },
+  {
+    "type": "checkbox",
+    "label": "Coral L4?",
+    "id": "teleopL4Coral"
+  },
+  {
+    "type": "checkbox",
+    "label": "Coral L3?",
+    "id": "teleopL3Coral"
+  },
+  {
+    "type": "checkbox",
+    "label": "Coral L2?",
+    "id": "teleopL2Coral"
+  },
+  {
+    "type": "checkbox",
+    "label": "Coral L1?",
+    "id": "teleopL1Coral"
+  },
+  {
+    "type": "checkbox",
+    "label": "Can they clear reef algae?",
+    "id": "teleopAlgaeClear"
+  },
+  {
+    "type": "checkbox",
+    "label": "Can they process algae?",
+    "id": "teleopAlgaeProcess"
+  },
+  {
+    "type": "checkbox",
+    "label": "Can they score algae in net?",
+    "id": "teleopAlgaeNet"
+  },
+  {
+    "type": "textblock",
+    "label": "List what they can do in teleop",
+    "id": "teleopNotes"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Autonomous"
+  },
+  {
+    "type": "checkbox",
+    "label": "Auto Routines on Blue Barge Side?",
+    "id": "autoBlueBargeSide"
+  },
+  {
+    "type": "checkbox",
+    "label": "Auto Routines in the Middle?",
+    "id": "autoMiddleSide"
+  },
+  {
+    "type": "checkbox",
+    "label": "Auto Routines on the Red Barge Side?",
+    "id": "autoRedBargeSide"
+  },
+  {
+    "type": "textblock",
+    "label": "List what they can do in autonomous",
+    "id": "autoRoutineNotes"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Endgame"
+  },
+  {
+    "type": "multiselect",
+    "label": "Climb?",
+    "options": [
+      "Deep Climb",
+      "Shallow Climb",
+      "Park Only"
+    ],
+    "id": "climb"
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "header",
+    "label": "Other"
+  },
+  {
+    "type": "slider",
+    "variant": "standard",
+    "label": "How friendly is the team?",
+    "id": "howFriendly",
+    "options": {
+      "min": 1,
+      "max": 5,
+      "step": 0.5
+    }
+  },
+  {
+    "type": "textblock",
+    "label": "Any other notes",
+    "id": "notes"
+  }
+]
